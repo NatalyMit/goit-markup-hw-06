@@ -599,8 +599,10 @@ img {
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px;
+  min-height: 584px;*/
+  width: 288px;
+  height: 623px;
   background-color: var(--c-bgl);
   padding: 72px 24px 24px;
   background: #fcfcfc;
