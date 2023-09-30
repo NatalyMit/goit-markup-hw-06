@@ -71,6 +71,10 @@ img {
   .pictuare_board {
     display: flex;
   }
+  .apps-image {
+    width: 356px;
+    height: 300px;
+  }
 }
 /*Descktop screen*/
 @media screen and (min-width: 1158px) {
@@ -97,6 +101,10 @@ img {
   }
   .pictuare_board {
     display: flex;
+  }
+  .apps-image {
+    width: 360px;
+    height: 300px;
   }
   .footer-text-container {
     margin-right: 120px;
@@ -553,6 +561,7 @@ img {
   overflow: hidden;
   position: relative;
 }
+
 .text-card-hov {
   position: absolute;
   top: 0;
