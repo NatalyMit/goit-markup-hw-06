@@ -448,6 +448,7 @@ img {
   padding-bottom: 0px;
   /*flex-basis: calc((100% - 3 * 24px) / 4);*/
   flex-basis: 100%;
+  max-width: 264px;
   border-radius: 0px 0px 4px 4px;
   /*justify-content: center;*/
   text-align: center;
@@ -723,6 +724,7 @@ img {
   letter-spacing: 0.04em;
   padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  opacity: 0.3;
   border-radius: 4px;
   color: var(--c-bgl);
 }
