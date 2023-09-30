@@ -98,6 +98,13 @@ img {
   .pictuare_board {
     display: flex;
   }
+  .footer-text-container {
+    margin-right: 120px;
+  }
+  .footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 /*Header*/
 .header {
@@ -581,20 +588,23 @@ img {
 
 /*Footer-section*/
 .container-footer {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  /*display: flex;
+  margin-right: auto;
+ align-items: baseline;*/
 }
 .footer-section {
   background-color: var(--c-bg);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px;*/
+  padding: 97.5px 0 96px 0;
 }
 
-.footer-text-container {
-  margin-right: 120px;
-}
 .footer-logo-one {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -627,7 +637,9 @@ img {
   margin: 0;
   padding: 0;
 }
-
+.footer-links-container {
+  margin: 72px 0;
+}
 .hero-footer {
   font-weight: 500;
   font-size: 16px;
@@ -637,26 +649,30 @@ img {
   margin-top: 0px;
   margin-bottom: 16px;
   padding-top: 0px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  /* align-items: center;
+  justify-content: center;*/
 }
 .social-link-f {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 16px;
   border-radius: 0px 0px 4px 4px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .team-social-f {
   width: 40px;
   height: 40px;
   padding-bottom: 0px;
-  flex: calc((100% - 3 * 16px) / 4);
+  flex-basis: calc((100% - 3 * 16px) / 4);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  justify-content: center;
-  flex-grow: 1;
+  /* justify-content: center;
+  flex-grow: 1;*/
 }
 .icon-footer {
   display: flex;
@@ -677,7 +693,7 @@ img {
   fill: var(--c-logo);
 }
 .footer-feedback {
-  margin-left: auto;
+  /* margin-left: auto;*/
 }
 .footer-text-subscribe {
   margin-bottom: 16px;
@@ -687,10 +703,15 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  /*gap: 24px;*/
 }
 .footer-form-input {
   width: 264px;
