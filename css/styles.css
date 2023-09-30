@@ -75,6 +75,9 @@ img {
     width: 356px;
     height: 300px;
   }
+  .container-footer {
+    padding: 0 108px;
+  }
 }
 /*Descktop screen*/
 @media screen and (min-width: 1158px) {
@@ -86,7 +89,10 @@ img {
     display: flex;
     gap: 40px;
   }
-
+  .hero_section {
+    padding: 188px 0 188px;
+    max-width: 1440px;
+  }
   .social {
     display: flex;
     gap: 40px;
@@ -99,6 +105,48 @@ img {
     color: var(--c-bg);
     margin-bottom: 8px;
   }
+  .web-inform {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .inform {
+    flex-basis: calc((100%-72) / 4);
+  }
+  .pictuare_board {
+    display: flex;
+  }
+
+  .text_section {
+    color: var(--c-par);
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+  }
+
+  .list-specialists {
+    gap: 24px;
+  }
+
+  .team-specialists {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    justify-content: center;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .item-card {
+    width: calc((100% - 48px) / 3);
+  }
+
   .pictuare_board {
     display: flex;
   }
@@ -106,12 +154,37 @@ img {
     width: 360px;
     height: 300px;
   }
-  .footer-text-container {
-    margin-right: 120px;
-  }
+
   .footer-section {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .container-footer {
+    display: flex;
+    margin-right: auto;
+    align-items: baseline;
+  }
+  .footer-text-container {
+    margin-right: 120px;
+  }
+  .footer-logo-one {
+    display: inline-block;
+  }
+
+  .hero-footer {
+    align-items: center;
+    justify-content: center;
+  }
+  .team-social-f {
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+  }
+  .footer-feedback {
+    margin-left: auto;
+  }
+  .footer-form {
+    gap: 24px;
   }
 }
 /*Header*/
@@ -153,8 +226,6 @@ img {
 }
 .nav-menu {
   display: none;
-  /* display: flex;
-  gap: 40px;*/
 }
 
 .item-nav {
@@ -197,8 +268,6 @@ img {
 }
 .social {
   display: none;
-  /*display: flex;
-  gap: 40px;*/
 }
 .header_address {
   display: inline-block;
@@ -236,9 +305,7 @@ img {
 /* Hero section*/
 .hero_section {
   background-color: var(--c-bg);
-  /* padding: 188px 0 188px;*/
   padding: 72px 0;
-  /*max-width: 1440px;*/
   max-width: 320px;
 
   background-image: linear-gradient(
@@ -368,9 +435,6 @@ img {
   overflow: hidden;
 }
 .web-inform {
-  /* display: flex;
-  justify-content: center;
-  gap: 24px;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -379,11 +443,9 @@ img {
 
 .inform {
   flex-basis: 100%;
-  /*flex-basis: calc((100%-72) / 4);*/
 }
 .pictuare_board {
   display: none;
-  /*display: flex;*/
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -416,11 +478,6 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /*color: var(--c-par);
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  text-align: left;
-  margin: 0;*/
 }
 
 .section-teamstyle {
@@ -448,17 +505,14 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px;
-  /*gap: 24px;*/
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-specialists {
   padding-bottom: 0px;
-  /*flex-basis: calc((100% - 3 * 24px) / 4);*/
   flex-basis: 100%;
   max-width: 264px;
   border-radius: 0px 0px 4px 4px;
-  /*justify-content: center;*/
   text-align: center;
   gap: 32px;
   background-color: var(--c-bgl);
@@ -544,16 +598,10 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 48px;
-  /* display: flex;
-  justify-content: center;
-  column-gap: 24px;
-  row-gap: 48px;
-  flex-wrap: wrap;*/
 }
 
 .item-card {
   flex-basis: 100%;
-  /* width: calc((100% - 48px) / 3);*/
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -599,9 +647,6 @@ img {
 /*Footer-section*/
 .container-footer {
   display: block;
-  /*display: flex;
-  margin-right: auto;
- align-items: baseline;*/
 }
 .footer-section {
   background-color: var(--c-bg);
@@ -660,8 +705,6 @@ img {
   margin-bottom: 16px;
   padding-top: 0px;
   text-align: center;
-  /* align-items: center;
-  justify-content: center;*/
 }
 .social-link-f {
   display: flex;
@@ -681,8 +724,6 @@ img {
   flex-basis: calc((100% - 3 * 16px) / 4);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  /* justify-content: center;
-  flex-grow: 1;*/
 }
 .icon-footer {
   display: flex;
@@ -701,9 +742,6 @@ img {
 }
 .icon-link-footer {
   fill: var(--c-logo);
-}
-.footer-feedback {
-  /* margin-left: auto;*/
 }
 .footer-text-subscribe {
   margin-bottom: 16px;
