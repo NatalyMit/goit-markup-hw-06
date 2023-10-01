@@ -52,8 +52,7 @@ img {
   padding-bottom: 96px;
 }
 .container {
-  min-width: 320px;
-  max-width: 100%;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
   outline: 2px solid red;
@@ -179,8 +178,6 @@ img {
 .hero_section {
   background-color: var(--c-bg);
   padding: 72px 0;
-  max-width: 320px;
-
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -203,7 +200,7 @@ img {
       url(../images/bg/Dark-bg_mob@2x.jpg);
   }
 }
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero_section {
     background-image: linear-gradient(
         to bottom,
@@ -214,7 +211,7 @@ img {
   }
 }
 
-@media screen and(min-width: 768px) and(min-resolution: 192dpl) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpl) {
   .hero_section {
     background-image: linear-gradient(
         to bottom,
@@ -224,7 +221,7 @@ img {
       url(../images/bg/Dark-bg_tab@2x.jpg);
   }
 }
-@media screen and(min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero_section {
     background-image: linear-gradient(
         to bottom,
@@ -234,7 +231,7 @@ img {
       url(../images/bg/people-office\ 1_des.jpg);
   }
 }
-@media screen and(min-width: 1200px) and (min-resolution: 192dpl) {
+@media screen and (min-width: 1200px) and (min-resolution: 192dpl) {
   .hero_section {
     background-image: linear-gradient(
         to bottom,
@@ -474,7 +471,6 @@ img {
 }
 
 .item-card {
-  flex-basis: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -995,15 +991,33 @@ img {
 .mobile-socials-icon {
   fill: var(--c-bgl);
 }
-@media screen and (max-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
+
 /*Tablet screen*/
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .header_address {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-btn-menu {
+    display: none;
   }
   .web-inform {
     display: flex;
@@ -1033,6 +1047,9 @@ img {
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
   }
+  .list-specialists {
+    gap: 64px 24px;
+  }
   .item {
     display: flex;
     justify-content: center;
@@ -1049,7 +1066,17 @@ img {
     height: 300px;
   }
   .container-footer {
-    padding: 0 108px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 72px 24px;
+    justify-content: center;
+  }
+  .footer-links-container {
+    margin: 0;
+  }
+  .footer-text-subscribe {
+    text-align: left;
   }
 }
 /*Descktop screen*/
@@ -1067,13 +1094,30 @@ img {
     display: flex;
     gap: 40px;
   }
+  .social {
+    display: flex;
+    gap: 40px;
+  }
+  .header-btn-menu {
+    display: none;
+  }
   .hero_section {
     padding: 188px 0 188px;
     max-width: 1440px;
   }
-  .social {
+
+  .web-inform {
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .inform {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .pictuare_board {
+    display: flex;
   }
   .plan_section_infom {
     font-weight: 500;
@@ -1083,19 +1127,6 @@ img {
     color: var(--c-bg);
     margin-bottom: 8px;
   }
-  .web-inform {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-  }
-
-  .inform {
-    flex-basis: calc((100%-72) / 4);
-  }
-  .pictuare_board {
-    display: flex;
-  }
-
   .text_section {
     color: var(--c-par);
     letter-spacing: 0.02em;
