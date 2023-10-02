@@ -241,8 +241,8 @@ img {
   }
 }
 .title-list {
-  /* display: flex;
-  flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
   color: var(--c-bgl);
   font-size: 36px;
   font-weight: 700;
@@ -250,9 +250,8 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
-  width: 288px;
+  max-width: 288px;
   height: 160px;
-  max-width: 320px;
   margin: 0 auto;
 }
 
