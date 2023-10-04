@@ -1071,13 +1071,7 @@ img {
     width: 356px;
     height: 300px;
   }
-  .container-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 72px 24px;
-    justify-content: center;
-  }
+
   .footer-logo-one {
     justify-content: left;
   }
@@ -1093,6 +1087,15 @@ img {
   }
   .footer-text-subscribe {
     text-align: left;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157.97px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 72px 24px;
+    max-width: 550px;
   }
 }
 /*Descktop screen*/
